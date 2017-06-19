@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My First Web Page</title>
+        <style>
+            table{
+                width: 100%;
+            }
+            img{
+                height: 500px;
+                width: 250px;
+            }
+            strong{
+                color: indigo;
+                font-size: 30px;
+                
+            }
+            div{
+                align-items: center;
+            }
+            div.mycustomdiv{
+                background-color: lightcyan;
+                
+            }
+            .mycustomdiv:hover .image {
+                opacity: 0.3;
+            }
+
+            .mycustomdiv:hover .mymoviename {
+                opacity: 1;
+            }
+            .text {
+                background-color: #4CAF50;
+                color: white;
+                font-size: 16px;
+                padding: 16px 32px;
+            }
+            .image {
+                opacity: 1;
+                display: block;
+                transition: .5s ease;
+                backface-visibility: hidden;
+            }
+
+            .mymoviename {
+                transition: .5s ease;
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%)
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div><strong>Welcome to my Theatre</strong></div>
+        <div>
+            <table style="width:100%;">
+                <tr>
+                    <td align="center">
+                        <div class="mycustomdiv">
+                            <div class="imgdiv"><img class="image" src='images/jj.png'>
+                                <div class="mymoviename">
+                                    <div class="text">Jagga Jasoos</div>
+                                </div>
+                            </div>
+                            <button name="jjbtn" id="jjbutton">Click to book</button>
+                        </div>
+                    </td>
+                    <td align="center">
+                        <div class="mycustomdiv">
+                            <div class="imgdiv"><img class="image" src='images/msd.jpg'>
+                                <div class="mymoviename">
+                                    <div class="text">MSD : The Untold Story</div>
+                                </div>
+                            </div>
+                            <button name="msdbtn" id="msdbutton">Click to book</button>
+                            
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <div class="mycustomdiv">
+                            <div class="imgdiv"><img class="image" src='images/raees.jpg'>
+                                <div class="mymoviename">
+                                    <div class="text">Raees</div>
+                                </div>
+                            </div>
+                            <button name="rsbtn" id="rsbutton">Click to book</button>
+                        </div>
+                    </td>
+                    <td align="center">
+                        <div class="mycustomdiv">
+                            <div class="imgdiv"><img class="image" src='images/spidey.jpg'>
+                                <div class="mymoviename">
+                                    <div class="text">SpiderMan</div>
+                                </div>
+                            </div>
+                            <button name="spdbtn" id="spdbutton">Click to book</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+    </body>
+</html>
